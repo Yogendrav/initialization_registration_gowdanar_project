@@ -14,7 +14,7 @@
  <fieldset><legend><b>Personal Details</b></legend>
     
   <div class="field">
-    <%= f.label :First_Name %><br />
+    <%= f.label :First_Name %><%= mark_required(@emp_master, :First_Name) %><br />
     <%= f.text_field :First_Name %>
   </div>
   <div class="field">
@@ -22,23 +22,23 @@
     <%= f.text_field :Middle_Name %> 
   </div>
   <div class="field">
-    <%= f.label :Last_Name %><br />
+    <%= f.label :Last_Name %><%= mark_required(@emp_master, :Last_Name)%><br />
     <%= f.text_field :Last_Name %>
   </div>
   <div class="field">
-    <%= f.label :DOB %><br />
+    <%= f.label :DOB %><%= mark_required(@emp_master, :DOB)%><br />
     <%= f.datepicker :DOB,
       changeMonth: true,
       changeYear: true,yearRange: "1900:2500",showAnim: "slide"
     %>
   </div>
   <div class="field">
-    <%= f.label :Martial_Status %><br />
-    <%= f.text_field :Martial_Status%>
+    <%= f.label :Martial_Status %><%= mark_required(@emp_master, :Martial_Status)%><br />
+    <%= f.select :Martial_Status,[['Select Status',''],['Single','single'],['Married','married']]%>
   </div>
   <div class="field">
-    <%= f.label :Gender %><br />
-    <%= f.text_field :Gender %>
+    <%= f.label :Gender %><%= mark_required(@emp_master, :Gender)%><br />
+    <%= f.select :Gender,[['Select Gender',''],['Male','male'],['Female','female']]%>
   </div>
  
   <div class="field">
@@ -56,7 +56,7 @@
   </fieldset>
                  <fieldset><legend><b>Education Details and Qualification Details</b></legend>
   <div class="field">
-    <%= f.label :Qualification %><br />
+    <%= f.label :Qualification %><%= mark_required(@emp_master, :Qualification)%><br />
     <%= f.text_field :Qualification %>
   </div>
   <div class="field">
@@ -64,19 +64,19 @@
     <%= f.text_field :Certificate_Details %>
   </div>
   <div class="field">
-    <%= f.label :Band %><br />
+    <%= f.label :Band %><%= mark_required(@emp_master, :Band)%><br />
     <%= f.text_field :Band %>
   </div>
   <div class="field">
-    <%= f.label :Designation %><br />
+    <%= f.label :Designation %><%= mark_required(@emp_master, :Designation)%><br />
     <%= f.text_field :Designation %>
   </div>
   <div class="field">
-    <%= f.label :Employee_Role %><br />
+    <%= f.label :Employee_Role %><%= mark_required(@emp_master, :Employee_Role)%><br />
     <%= f.text_field :Employee_Role %>
   </div>
   <div class="field">
-    <%= f.label :Category_Id %><br />
+    <%= f.label :Category_Id %><%= mark_required(@emp_master, :Category_Id)%><br />
     <%= f.text_field :Category_Id %>
   </div>
   <div class="field">
@@ -92,13 +92,13 @@
     <%= f.text_field :Blackberry_No %>
   </div>
   <div class="field">
-    <%= f.label :Joining_Date %><br />
+    <%= f.label :Joining_Date %><%= mark_required(@emp_master, :Joining_Date)%><br />
     <%= f.datepicker :Joining_Date,
       changeMonth: true,
       changeYear: true,yearRange: "1900:2500",showAnim: "slide" %>
   </div>
   <div class="field">
-    <%= f.label :Industry_Experience %><br />
+    <%= f.label :Industry_Experience %><%= mark_required(@emp_master, :Industry_Experience)%><br />
     <%= f.text_field :Industry_Experience %>
   </div>
   <div class="field">
@@ -106,11 +106,11 @@
     <%= f.text_field :Organisation_Experience %>
   </div>
   <div class="field">
-    <%= f.label :Reporting_Manager %><br />
+    <%= f.label :Reporting_Manager %><%= mark_required(@emp_master, :Reporting_Manager)%><br />
     <%= f.text_field :Reporting_Manager %>
   </div>
   <div class="field">
-    <%= f.label :Counter_Signing_Manager %><br />
+    <%= f.label :Counter_Signing_Manager %><%= mark_required(@emp_master, :Counter_Signing_Manager)%><br />
     <%= f.text_field :Counter_Signing_Manager %>
   </div>
   <div class="field">
@@ -126,7 +126,7 @@
     <%= f.text_field :Secondary_Technology %>
   </div>
   <div class="field">
-    <%= f.label :Employment_Type %><br />
+    <%= f.label :Employment_Type %><%= mark_required(@emp_master, :Employment_Type)%><br />
     <%= f.text_field :Employment_Type %>
   </div>
   <div class="field">
@@ -142,7 +142,7 @@
     <%= f.text_field :Floor_No %>
   </div>
   <div class="field">
-    <%= f.label :Billing_Status %><br />
+    <%= f.label :Billing_Status %><%= mark_required(@emp_master, :Billing_Status)%><br />
     <%= f.text_field :Billing_Status %>
   </div>
   <div class="field">
@@ -168,7 +168,7 @@
   </fieldset>
                  <fieldset><legend><b>Contact Details</b></legend>
   <div class="field">
-    <%= f.label :Email_id %><br />
+    <%= f.label :Email_id %><%= mark_required(@emp_master, :Email_id)%><br />
     <%= f.text_field :Email_id %>
   </div>
   <div class="field">

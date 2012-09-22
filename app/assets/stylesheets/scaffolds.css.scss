@@ -10,10 +10,18 @@ body {
 a{
   align:justify;
 }
-p, ol, ul, td {
+ ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
+
   font-size: 13px;
   line-height: 18px;
+  
+}
+p{
+  font-size: 13px;
+  display:inline-block;
+  width: 300px;
+   text-indent: 80px;
 }
 
 pre {
@@ -44,18 +52,18 @@ div {
 }
 
 #notice {
-  color: green;
+  color: #D1F22C;
 }
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #D1F22C;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid #D1F22C;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -67,11 +75,23 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
+    background-color: #D1F22C;
     color: #fff;
   }
   ul li {
     font-size: 12px;
     list-style: square;
   }
+}
+fieldset {
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 9px;
+
+}
+legend {
+border: solid 1px black;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
 }
