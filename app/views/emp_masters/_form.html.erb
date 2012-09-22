@@ -1,0 +1,241 @@
+<%= form_for(@emp_master) do |f| %>
+  <% if @emp_master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@emp_master.errors.count, "error") %> prohibited this emp_master from being saved:</h2>
+
+      <ul>
+      <% @emp_master.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <fieldset><legend><b>Personal Details</b></legend>
+    
+  <div class="field">
+    <%= f.label :First_Name %><br />
+    <%= f.text_field :First_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Middle_Name %><br />
+    <%= f.text_field :Middle_Name %> 
+  </div>
+  <div class="field">
+    <%= f.label :Last_Name %><br />
+    <%= f.text_field :Last_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :DOB %><br />
+    <%= f.datepicker :DOB,
+      changeMonth: true,
+      changeYear: true,yearRange: "1900:2500",showAnim: "slide"
+    %>
+  </div>
+  <div class="field">
+    <%= f.label :Martial_Status %><br />
+    <%= f.text_field :Martial_Status%>
+  </div>
+  <div class="field">
+    <%= f.label :Gender %><br />
+    <%= f.text_field :Gender %>
+  </div>
+ 
+  <div class="field">
+    <%= f.label :Blood_Group %><br />
+    <%= f.text_field :Blood_Group %>
+  </div>
+  <div class="field">
+    <%= f.label :Nationality %><br />
+    <%= f.text_field :Nationality %>
+  </div>
+  <div class="field">
+    <%= f.label :Languages_Known %><br />
+    <%= f.text_field :Languages_Known %>
+  </div>
+  </fieldset>
+                 <fieldset><legend><b>Education Details and Qualification Details</b></legend>
+  <div class="field">
+    <%= f.label :Qualification %><br />
+    <%= f.text_field :Qualification %>
+  </div>
+  <div class="field">
+    <%= f.label :Certificate_Details %><br />
+    <%= f.text_field :Certificate_Details %>
+  </div>
+  <div class="field">
+    <%= f.label :Band %><br />
+    <%= f.text_field :Band %>
+  </div>
+  <div class="field">
+    <%= f.label :Designation %><br />
+    <%= f.text_field :Designation %>
+  </div>
+  <div class="field">
+    <%= f.label :Employee_Role %><br />
+    <%= f.text_field :Employee_Role %>
+  </div>
+  <div class="field">
+    <%= f.label :Category_Id %><br />
+    <%= f.text_field :Category_Id %>
+  </div>
+  <div class="field">
+    <%= f.label :Department_Name %><br />
+    <%= f.text_field :Department_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Sub_Department_Name %><br />
+    <%= f.text_field :Sub_Department_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Blackberry_No %><br />
+    <%= f.text_field :Blackberry_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Joining_Date %><br />
+    <%= f.datepicker :Joining_Date,
+      changeMonth: true,
+      changeYear: true,yearRange: "1900:2500",showAnim: "slide" %>
+  </div>
+  <div class="field">
+    <%= f.label :Industry_Experience %><br />
+    <%= f.text_field :Industry_Experience %>
+  </div>
+  <div class="field">
+    <%= f.label :Organisation_Experience %><br />
+    <%= f.text_field :Organisation_Experience %>
+  </div>
+  <div class="field">
+    <%= f.label :Reporting_Manager %><br />
+    <%= f.text_field :Reporting_Manager %>
+  </div>
+  <div class="field">
+    <%= f.label :Counter_Signing_Manager %><br />
+    <%= f.text_field :Counter_Signing_Manager %>
+  </div>
+  <div class="field">
+    <%= f.label :Domain %><br />
+    <%= f.text_field :Domain %>
+  </div>
+  <div class="field">
+    <%= f.label :Primary_Technology %><br />
+    <%= f.text_field :Primary_Technology %>
+  </div>
+  <div class="field">
+    <%= f.label :Secondary_Technology %><br />
+    <%= f.text_field :Secondary_Technology %>
+  </div>
+  <div class="field">
+    <%= f.label :Employment_Type %><br />
+    <%= f.text_field :Employment_Type %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Details %><br />
+    <%= f.text_field :Billing_Details %>
+  </div>
+  <div class="field">
+    <%= f.label :Seat_No %><br />
+    <%= f.text_field :Seat_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Floor_No %><br />
+    <%= f.text_field :Floor_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Status %><br />
+    <%= f.text_field :Billing_Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Ex_Office_Ext %><br />
+    <%= f.text_field :Ex_Office_Ext %>
+  </div>
+  <div class="field">
+    <%= f.label :Tenth_Percentage %><br />
+    <%= f.text_field :Tenth_Percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :Twelvth_Percentage %><br />
+    <%= f.text_field :Twelvth_Percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :Graduation_Percentage %><br />
+    <%= f.text_field :Graduation_Percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :Overall_Experience %><br />
+    <%= f.text_field :Overall_Experience %>
+  </div>
+  </fieldset>
+                 <fieldset><legend><b>Contact Details</b></legend>
+  <div class="field">
+    <%= f.label :Email_id %><br />
+    <%= f.text_field :Email_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Mobile_No %><br />
+    <%= f.text_field :Mobile_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Emergency_Contact_Person %><br />
+    <%= f.text_field :Emergency_Contact_Person %>
+  </div>
+  <div class="field">
+    <%= f.label :Emergency_Contact_No %><br />
+    <%= f.text_field :Emergency_Contact_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_Line1 %><br />
+    <%= f.text_field :Address_Line1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_Line2 %><br />
+    <%= f.text_field :Address_Line2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_Line_3 %><br />
+    <%= f.text_field :Address_Line_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Employee_Location %><br />
+    <%= f.text_field :Employee_Location %>
+  </div>
+  </fieldset>
+                 <fieldset><legend><b>Passport Details</b></legend>
+  <div class="field">
+    <%= f.label :Passport_No %><br />
+    <%= f.text_field :Passport_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Passport_Issue_Date%><br />
+    <%= f.datepicker :Passport_Issue_Date,
+      changeMonth: true,
+      changeYear: true,yearRange: "1900:2500",showAnim: "slide" %>
+  </div>
+  <div class="field">
+    <%= f.label :Passport_Issue_Place %><br />
+    <%= f.text_field :Passport_Issue_Place %>
+  </div>
+  <div class="field">
+    <%= f.label :Passport_Expiry_Date %><br />
+    <%= f.datepicker :Passport_Expiry_Date,
+      changeMonth: true,
+      changeYear: true,yearRange: "1900:2500",showAnim: "slide" %>
+  </div>
+  <div class="field">
+    <%= f.label :ECNR_Status %><br />
+    <%= f.text_field :ECNR_Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Visa_Details %><br />
+    <%= f.text_field :Visa_Details %>
+  </div>
+  <div class="field">
+    <%= f.label :PAN_Card %><br />
+    <%= f.text_field :PAN_Card %>
+  </div>
+</fieldset>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
