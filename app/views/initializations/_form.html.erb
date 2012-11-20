@@ -1,0 +1,81 @@
+<%= form_for(@initialization) do |f| %>
+  <% if @initialization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@initialization.errors.count, "error") %> prohibited this initialization from being saved:</h2>
+
+      <ul>
+      <% @initialization.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Project_id %><br />
+    <%= f.text_field :Project_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Registration_Date %><br />
+    <%= f.text_field :Registration_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_Name %><br />
+    <%= f.text_field :Project_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_Description %><br />
+    <%= f.text_field :Project_Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_type %><br />
+    <%= f.text_field :Project_type %>
+  </div>
+  <div class="field">
+    <%= f.label :Start_Date %><br />
+    <%= f.datepicker :Start_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Expected_End_Date %><br />
+    <%= f.text_field :Expected_End_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_Classification %><br />
+    <%= f.text_field :Project_Classification %>
+  </div>
+  <div class="field">
+    <%= f.label :Department_Name %><br />
+    <%= f.text_field :Department_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Sub_Department_Name %><br />
+    <%= f.text_field :Sub_Department_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Proposed_Project_Manager %><br />
+    <%= f.text_field :Proposed_Project_Manager %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Customer_Name %><br />
+    <%= f.text_field :Billing_Customer_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Customer_Project_Manager %><br />
+    <%= f.text_field :Billing_Customer_Project_Manager %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Expected_Resource_Details_Onshore %><br />
+    <%= f.text_field :Billing_Expected_Resource_Details_Onshore %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Expected_Resource_Details_Offshore %><br />
+    <%= f.text_field :Billing_Expected_Resource_Details_Offshore %>
+  </div>
+  <div class="field">
+    <%= f.label :Billing_Customer_Location %><br />
+    <%= f.text_field :Billing_Customer_Location %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

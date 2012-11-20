@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Project_id: MyString
+  Registration_Date: MyString
+  Project_Name: MyString
+  Project_Description: MyString
+  Project_type: MyString
+  Start_Date: MyString
+  Expected_End_Date: MyString
+  Project_Classification: MyString
+  Department_Name: MyString
+  Sub_Department_Name: MyString
+  Proposed_Project_Manager: MyString
+  Billing_Customer_Name: MyString
+  Billing_Customer_Project_Manager: MyString
+  Billing_Expected_Resource_Details_Onshore: MyString
+  Billing_Expected_Resource_Details_Offshore: MyString
+  Billing_Customer_Location: MyString
+
+two:
+  Project_id: MyString
+  Registration_Date: MyString
+  Project_Name: MyString
+  Project_Description: MyString
+  Project_type: MyString
+  Start_Date: MyString
+  Expected_End_Date: MyString
+  Project_Classification: MyString
+  Department_Name: MyString
+  Sub_Department_Name: MyString
+  Proposed_Project_Manager: MyString
+  Billing_Customer_Name: MyString
+  Billing_Customer_Project_Manager: MyString
+  Billing_Expected_Resource_Details_Onshore: MyString
+  Billing_Expected_Resource_Details_Offshore: MyString
+  Billing_Customer_Location: MyString

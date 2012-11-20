@@ -1,4 +1,6 @@
 Gowdanar::Application.routes.draw do
+  resources :initializations
+
   resources :emp_masters
 
   # The priority is based upon order of creation:

@@ -1,0 +1,54 @@
+<h1>Listing initializations</h1>
+
+<table id="projects">
+    <thead>
+  <tr>
+    <th>Project</th>
+    <th>Registration date</th>
+    <th>Project name</th>
+    <th>Project description</th>
+    <th>Project type</th>
+    <th>Start date</th>
+    <th>Expected end date</th>
+    <th>Project classification</th>
+    <th>Department name</th>
+    <th>Sub department name</th>
+    <th>Proposed project manager</th>
+    <th>Billing customer name</th>
+    <th>Billing customer project manager</th>
+    <th>Billing expected resource details onshore</th>
+    <th>Billing expected resource details offshore</th>
+    <th>Billing customer location</th>
+    
+  </tr>
+</thead>
+<tbody>
+<% @initializations.each do |initialization| %>
+  <tr>
+    <td><%= initialization.Project_id %></td>
+    <td><%= initialization.Registration_Date %></td>
+    <td><%= initialization.Project_Name %></td>
+    <td><%= initialization.Project_Description %></td>
+    <td><%= initialization.Project_type %></td>
+    <td><%= initialization.Start_Date %></td>
+    <td><%= initialization.Expected_End_Date %></td>
+    <td><%= initialization.Project_Classification %></td>
+    <td><%= initialization.Department_Name %></td>
+    <td><%= initialization.Sub_Department_Name %></td>
+    <td><%= initialization.Proposed_Project_Manager %></td>
+    <td><%= initialization.Billing_Customer_Name %></td>
+    <td><%= initialization.Billing_Customer_Project_Manager %></td>
+    <td><%= initialization.Billing_Expected_Resource_Details_Onshore %></td>
+    <td><%= initialization.Billing_Expected_Resource_Details_Offshore %></td>
+    <td><%= initialization.Billing_Customer_Location %></td>
+    <td><%= link_to 'Show', initialization %></td>
+    <td><%= link_to 'Edit', edit_initialization_path(initialization) %></td>
+    <td><%= link_to 'Destroy', initialization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Initialization', new_initialization_path %>

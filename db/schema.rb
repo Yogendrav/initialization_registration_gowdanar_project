@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120918124618) do
+ActiveRecord::Schema.define(:version => 20120928051457) do
 
   create_table "emp_masters", :force => true do |t|
     t.string   "First_Name"
@@ -67,6 +67,27 @@ ActiveRecord::Schema.define(:version => 20120918124618) do
     t.string   "PAN_Card"
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+  end
+
+  create_table "initializations", :force => true do |t|
+    t.string   "Project_id"
+    t.string   "Registration_Date"
+    t.string   "Project_Name"
+    t.string   "Project_Description"
+    t.string   "Project_type"
+    t.string   "Start_Date"
+    t.string   "Expected_End_Date"
+    t.string   "Project_Classification"
+    t.string   "Department_Name"
+    t.string   "Sub_Department_Name"
+    t.string   "Proposed_Project_Manager"
+    t.string   "Billing_Customer_Name"
+    t.string   "Billing_Customer_Project_Manager"
+    t.string   "Billing_Expected_Resource_Details_Onshore"
+    t.string   "Billing_Expected_Resource_Details_Offshore"
+    t.string   "Billing_Customer_Location"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
   end
 
 end

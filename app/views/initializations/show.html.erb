@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+<fieldset><legend><b>Personal Details</b></legend>
+<p>
+  <b>Project:</b>
+  <%= @initialization.Project_id %>
+</p>
+
+<p>
+  <b>Registration date:</b>
+  <%= @initialization.Registration_Date %>
+</p>
+
+<p>
+  <b>Project name:</b>
+  <%= @initialization.Project_Name %>
+</p>
+
+<p>
+  <b>Project description:</b>
+  <%= @initialization.Project_Description %>
+</p>
+
+<p>
+  <b>Project type:</b>
+  <%= @initialization.Project_type %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @initialization.Start_Date %>
+</p>
+
+<p>
+  <b>Expected end date:</b>
+  <%= @initialization.Expected_End_Date %>
+</p>
+
+<p>
+  <b>Project classification:</b>
+  <%= @initialization.Project_Classification %>
+</p>
+
+<p>
+  <b>Department name:</b>
+  <%= @initialization.Department_Name %>
+</p>
+
+<p>
+  <b>Sub department name:</b>
+  <%= @initialization.Sub_Department_Name %>
+</p>
+
+<p>
+  <b>Proposed project manager:</b>
+  <%= @initialization.Proposed_Project_Manager %>
+</p>
+
+<p>
+  <b>Billing customer name:</b>
+  <%= @initialization.Billing_Customer_Name %>
+</p>
+
+<p>
+  <b>Billing Customer Project Manager:</b>
+  <%= @initialization.Billing_Customer_Project_Manager %>
+</p>
+
+<p>
+  <b>Billing Expected Resource Details Onshore:</b>
+  <%= @initialization.Billing_Expected_Resource_Details_Onshore %>
+</p>
+
+<p>
+  <b>Billing expected resource details offshore:</b>
+  <%= @initialization.Billing_Expected_Resource_Details_Offshore %>
+</p>
+
+<p>
+  <b>Billing customer location:</b>
+  <%= @initialization.Billing_Customer_Location %>
+</p>
+</fieldset>
+
+<%= link_to 'Edit', edit_initialization_path(@initialization) %> |
+<%= link_to 'Back', initializations_path %>
